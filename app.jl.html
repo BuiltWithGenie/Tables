@@ -1,0 +1,53 @@
+<h6>Employe performance</h6>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <st-table id="icrs" :data="table.data" :columns="table.columns" :title="title" :search="true" :searchcolumns="true" :showcontrols="true" :currencycolumns="['Salary', 'Sales']"></st-table>
+    </div>
+</div>
+<div class="row">
+    <div class="st-col st-module col-9">
+        <plotly id="i58er" data="W3siZ2J0eXBlIjoiTGluZSBDaGFydCIsIngiOiIkX3t4fSIsInkiOiIkX3t5fSIsInR5cGUiOiJzY2F0dGVyIiwibW9kZSI6Im1hcmtlcnMiLCJuYW1lIjoiVHJhY2UifV0=" config="e30=" layout="eyJ0aXRsZSI6IlNhbGVzIGNoYXJ0In0="></plotly>
+    </div>
+    <div class="st-col st-module col-sm">
+        <q-select id="iauwm" v-model="x_var" label="X axis" :options="x_options"></q-select>
+    </div>
+</div><!-- <h4> Table with data aggretation, grouping and search</h4> -->
+<!-- <st-table -->
+<!-- :data="table.data" -->
+<!-- :columns="table.columns" -->
+<!-- :title="title" -->
+<!-- :search="true" -->
+<!-- :searchcolumns="true" -->
+<!-- :showcontrols="true" -->
+<!-- :rows-per-page-options="[10, 20, 50]" -->
+<!-- :groupby.sync="group_by" -->
+<!-- :groupbyoptions="group_by_options" -->
+<!-- :groupkeys="groupkeys" -->
+<!-- :selectedkey="selectedkey" -->
+<!-- :aggregateby.sync="aggregate_by" -->
+<!-- :aggregatebyoptions="aggregate_by_options" -->
+<!-- :aggregatetarget.sync="aggregate_target" -->
+<!-- :aggregatetargetoptions="aggregate_target_options" -->
+<!-- /> -->
+<h6>Division performance analysis</h6>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <st-table id="ilfej" :groupkeys.sync="groupkeys" :selectedkey.sync="selectedkey" :groupbyoptions="group_by_options" :columns="table.columns" :title="title" :search="true" :searchcolumns="true" :showcontrols="true" :groupby.sync="group_by" :data="table.data" :currencycolumns="['Salary', 'Sales']"></st-table>
+    </div>
+</div>
+<h6>Salary range analysis</h6>
+<div class="row">
+    <div class="st-col col-9 st-module">
+        <st-table id="i3fel" :data="table_range.data" :columns="table_range.columns" :search="false" title="Employee data from DB" :currencycolumns="['Salary', 'Sales']"></st-table>
+    </div>
+    <div class="st-col st-module col-sm">
+        <h6>Salary range</h6>
+        <q-range id="i886m" :min="r_min" v-model="r" :label="true" :max="r_max" :markers="true" :step="5000" :switch-label-side="true"></q-range>
+    </div>
+</div>
+<h6>Multi-dimensional performance insights</h6>
+<div class="row">
+    <div class="st-col col-12 st-module">
+        <st-pivottable id="igf1" :vals="pivot_vals" :cols="pivot_cols" :rows="pivot_rows" :dataset="array_table"></st-pivottable>
+    </div>
+</div>

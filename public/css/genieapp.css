@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+h4 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+st-table {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+plotly {
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+div[class^="row"] {
+    margin: -10px;
+    margin-bottom: 30px;
+}
+
+div[class^="st-col"] {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+q-range {
+    width: 100%;
+    padding: 30px 0;
+}
+
+st-pivottable {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Improve table responsiveness */
+st-table, st-pivottable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Style for table headers and cells (assuming they use standard HTML table elements) */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #1a73e8;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style for input elements (assuming they're used in the table for search/filter) */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    div[class^="row"] {
+        flex-direction: column;
+    }
+
+    div[class^="st-col"] {
+        margin: 10px 0;
+    }
+}
