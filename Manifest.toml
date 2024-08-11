@@ -644,7 +644,9 @@ version = "0.13.15"
 
 [[deps.StippleTables]]
 deps = ["DataFrames", "Stipple", "StippleUI"]
-path = "/Users/pere/.julia/dev/StippleTables"
+git-tree-sha1 = "9ee83452f3cbbf6e6bffab2319c7caf16f5a69b7"
+repo-rev = "main"
+repo-url = "https://github.com/GenieFramework/StippleTables.jl"
 uuid = "5bb4b094-0818-496d-ae94-fd777e10e8ba"
 version = "0.1.0"
 
