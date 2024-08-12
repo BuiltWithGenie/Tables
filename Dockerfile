@@ -5,7 +5,7 @@ COPY Project.toml /home/genie/app/
 WORKDIR /home/genie/app
 RUN chown -R genie:genie /home/
 USER genie
-RUN julia -e "
+RUN julia -e "\
               using Pkg; Pkg.activate(\".\");
               Pkg.add(url=\"https://github.com/GenieFramework/StippleTables.jl\");
               Pkg.add(url=\"https://github.com/GenieFramework/StipplePivotTable.jl\");
