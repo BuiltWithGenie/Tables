@@ -1,4 +1,4 @@
-name = "StippleTables"
+name = "EmployeeTables"
 uuid = "05ab04e0-58df-11ef-3008-9d7bc1b1a22d"
 version = "0.1.2"
 
@@ -10,4 +10,4 @@ Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 SQLite = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
 
 [Genie]
-instantiated_pwd = "w:\\Projects\\GB-experiments\\Tables"
+instantiated_pwd = "w:\\Projects\\GB-experiments\\EmployeeTables"
