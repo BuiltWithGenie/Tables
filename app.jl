@@ -1,6 +1,8 @@
 using GenieFramework
-@genietools
 using StippleTables, StipplePivotTable, DataFrames, SQLite
+
+@genietools
+Genie.Configuration.isprod() && Genie.config.cdn_enabled && Genie.Assets.assets_config!([StippleTables, StipplePivotTable], host = Genie.config.cdn_url)
 
 df = DataFrame(
     ID = 1:20,
@@ -39,7 +41,7 @@ db = SQLite.DB("employees.sqlite")
             table = DataTable(df)
         else
             groupkeys = unique(df[:,group_by])
-            gdf = groupby(df, group_by)  
+            gdf = groupby(df, group_by)
             selectedkey = first(groupkeys)
         end
     end
@@ -50,14 +52,14 @@ db = SQLite.DB("employees.sqlite")
 
 
     # database integration
-    @out r_max =  maximum(df[:,"Sales"])    
+    @out r_max =  maximum(df[:,"Sales"])
     @out r_min = minimum(df[:,"Sales"])
     @in r = RangeData(0:100000)
     @out table_range = DataTable(df)
 
     @onchange r begin
         query = """
-                SELECT * FROM employees 
+                SELECT * FROM employees
                 WHERE Salary BETWEEN ? AND ?
                 ORDER BY Sales;
                 """
@@ -74,7 +76,7 @@ db = SQLite.DB("employees.sqlite")
     @in aggregate_by::Vector{String} = []
     @out aggregate_by_options = ["Employee", "Department", "Performance"]
     @in aggregate_target = ""
-    @out aggregate_target_options = ["Salary", "Sales"]   
+    @out aggregate_target_options = ["Salary", "Sales"]
 
     @onchange aggregate_by begin
         if aggregate_by == []
