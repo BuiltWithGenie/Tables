@@ -1,5 +1,5 @@
 FROM julia:latest
-RUN useradd --create-home --shell /bin/bash genie
+RUN useradd --create-home genie
 RUN mkdir /home/genie/app
 COPY Project.toml /home/genie/app/
 WORKDIR /home/genie/app
