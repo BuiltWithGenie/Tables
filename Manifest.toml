@@ -2,7 +2,7 @@
 
 julia_version = "1.10.4"
 manifest_format = "2.0"
-project_hash = "0da29b1706d75299bb4705f1e1b691d1d1fe6ca5"
+project_hash = "d2b63d28406440041c68a0d55d7ce0d3cd48df95"
 
 [[deps.ArgParse]]
 deps = ["Logging", "TextWrap"]
@@ -634,14 +634,6 @@ version = "0.28.13"
     JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
     OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 
-[[deps.StipplePivotTable]]
-deps = ["DataFrames", "Stipple", "StippleUI"]
-git-tree-sha1 = "803cc3629fd10083705dcba7f69ac5600f15580b"
-repo-rev = "main"
-repo-url = "https://github.com/GenieFramework/StipplePivotTable.jl"
-uuid = "29f11006-3202-4091-a17b-0a26282d76dd"
-version = "0.1.1"
-
 [[deps.StipplePlotly]]
 deps = ["DataFrames", "Genie", "Requires", "Stipple"]
 git-tree-sha1 = "50c78fe3fd5222344270415e35d20dc69d26d911"
@@ -653,14 +645,6 @@ version = "0.13.15"
 
     [deps.StipplePlotly.weakdeps]
     PlotlyBase = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
-
-[[deps.StippleTables]]
-deps = ["DataFrames", "Stipple", "StippleUI"]
-git-tree-sha1 = "9ee83452f3cbbf6e6bffab2319c7caf16f5a69b7"
-repo-rev = "main"
-repo-url = "https://github.com/GenieFramework/StippleTables.jl"
-uuid = "5bb4b094-0818-496d-ae94-fd777e10e8ba"
-version = "0.1.0"
 
 [[deps.StippleUI]]
 deps = ["Colors", "Dates", "Genie", "OrderedCollections", "PrecompileTools", "Stipple", "Tables"]
