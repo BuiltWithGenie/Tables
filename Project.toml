@@ -1,3 +1,7 @@
+name = "StippleTables"
+uuid = "5bb4b094-0818-496d-ae94-fd777e10e8bb"
+version = "0.1.2"
+
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 GenieDeployDocker = "a082159f-dd50-4f6d-a3c5-00c38fd36577"
